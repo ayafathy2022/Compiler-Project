@@ -1,0 +1,116 @@
+	1: reserved word: int
+	1: ID, name= max
+	1: (
+	1: reserved word: int
+	1: ID, name= a
+	1: ,
+	1: reserved word: int
+	1: ID, name= b
+	1: )
+	1: {
+	2: reserved word: if
+	2: (
+	2: ID, name= a
+	2: >
+	2: ID, name= b
+	2: )
+	3: reserved word: return
+	3: ID, name= a
+	3: ;
+	4: reserved word: else
+	5: reserved word: return
+	5: ID, name= b
+	5: ;
+	6: }
+	9: reserved word: int
+	9: ID, name= findMax
+	9: (
+	9: )
+	9: {
+	10: reserved word: int
+	10: ID, name= numValues
+	10: ;
+	11: ID, name= numValues
+	11: =
+	11: ID, name= read
+	11: (
+	11: )
+	11: ;
+	13: reserved word: int
+	13: ID, name= maxValue
+	13: ;
+	14: ID, name= maxValue
+	14: =
+	14: ID, name= read
+	14: (
+	14: )
+	14: ;
+	16: reserved word: int
+	16: ID, name= i
+	16: ;
+	17: ID, name= for
+	17: (
+	17: ID, name= i
+	17: =
+	17: NUM, val= 2
+	17: ;
+	17: ID, name= i
+	17: <=
+	17: ID, name= numValues
+	17: ;
+	17: ID, name= i
+	17: +
+	17: +
+	17: )
+	17: {
+	18: reserved word: int
+	18: ID, name= value
+	18: ;
+	19: ID, name= value
+	19: =
+	19: ID, name= read
+	19: (
+	19: )
+	19: ;
+	20: ID, name= maxValue
+	20: =
+	20: ID, name= max
+	20: (
+	20: ID, name= maxValue
+	20: ,
+	20: ID, name= value
+	20: )
+	20: ;
+	21: }
+	23: reserved word: return
+	23: ID, name= maxValue
+	23: ;
+	24: }
+	26: reserved word: void
+	26: ID, name= main
+	26: (
+	26: reserved word: void
+	26: )
+	26: {
+	27: reserved word: int
+	27: ID, name= result
+	27: ;
+	28: ID, name= result
+	28: =
+	28: ID, name= findMax
+	28: (
+	28: )
+	28: ;
+	30: reserved word: if
+	30: (
+	30: ID, name= result
+	30: >
+	30: NUM, val= 0
+	30: )
+	31: ID, name= write
+	31: (
+	31: ID, name= result
+	31: )
+	31: ;
+	32: }
+	32: EOF

@@ -1,0 +1,32 @@
+int max(int a, int b) {
+    if (a > b)
+        return a;
+    else
+        return b;
+}
+
+
+int findMax() {
+    int numValues;
+    numValues = read(); 
+
+    int maxValue;
+    maxValue = read();  
+
+    int i;
+    for (i = 2; i <= numValues; i++) {
+        int value;
+        value = read();  
+        maxValue = max(maxValue, value);  
+    }
+
+    return maxValue;
+}
+
+void main(void) {
+    int result;
+    result = findMax();  
+
+    if (result > 0)
+        write(result);  
+}
